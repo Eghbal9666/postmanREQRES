@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "b851097a-9347-4356-b013-3a09760fbf9a",
+		"name": "Reqres",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37987653",
+		"_collection_link": "https://doorehami.postman.co/workspace/66e70c7e-0d5e-45fa-8f74-72c93165ba9c/collection/37987653-b851097a-9347-4356-b013-3a09760fbf9a?action=share&source=collection_link&creator=37987653"
+	},
+	"item": [
+		{
+			"name": "callList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{reqres}}api/users?page=2",
+					"host": [
+						"{{reqres}}api"
+					],
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "singleCall",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{reqres}}api/users/2",
+					"host": [
+						"{{reqres}}api"
+					],
+					"path": [
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "resource",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{reqres}}api/unknown",
+					"host": [
+						"{{reqres}}api"
+					],
+					"path": [
+						"unknown"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"magnolya\",\r\n    \"job\": \"group leader\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{reqres}}api/users",
+					"host": [
+						"{{reqres}}api"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateUsers",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Firooz\",\r\n    \"job\": \"reception\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{reqres}}api/users/5",
+					"host": [
+						"{{reqres}}api"
+					],
+					"path": [
+						"users",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatePatch",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"mempheus\",\r\n    \"job\": \"president\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{reqres}}api/users/2",
+					"host": [
+						"{{reqres}}api"
+					],
+					"path": [
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
