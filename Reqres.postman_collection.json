@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "372c73c3-165f-45f7-bfc7-8e9da138bdd3",
-		"name": "Reqres Copy 5",
+		"_postman_id": "fb697497-7d44-4000-ac2c-e497310b8696",
+		"name": "Reqres Copy 6",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "37987653",
-		"_collection_link": "https://doorehami.postman.co/workspace/66e70c7e-0d5e-45fa-8f74-72c93165ba9c/collection/37987653-372c73c3-165f-45f7-bfc7-8e9da138bdd3?action=share&source=collection_link&creator=37987653"
+		"_collection_link": "https://doorehami.postman.co/workspace/66e70c7e-0d5e-45fa-8f74-72c93165ba9c/collection/37987653-fb697497-7d44-4000-ac2c-e497310b8696?action=share&source=collection_link&creator=37987653"
 	},
 	"item": [
 		{
@@ -190,6 +190,23 @@
 		},
 		{
 			"name": "updatePatch",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.globals.set(\"variable_key\", \"variable_value\");\r",
+							"pm.collectionVariables.set(\"variable_key\", \"variable_value\");\r",
+							"pm.environment.set(\"variable_key\", \"variable_value\");\r",
+							"pm.globals.set(\"variable_key\", \"variable_value\");\r",
+							"pm.collectionVariables.set(\"variable_key\", \"variable_value\");\r",
+							"pm.environment.set(\"variable_key\", \"variable_value\");"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
 			"request": {
 				"method": "PATCH",
 				"header": [],
