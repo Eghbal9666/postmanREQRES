@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "6c11d4ea-f7ad-4b76-aaf2-659a4a14e213",
-		"name": "Reqres Copy 3",
+		"_postman_id": "8a91a728-7ad5-484f-8a10-67f1cac8100d",
+		"name": "Reqres Copy 4",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "37987653",
-		"_collection_link": "https://doorehami.postman.co/workspace/66e70c7e-0d5e-45fa-8f74-72c93165ba9c/collection/37987653-6c11d4ea-f7ad-4b76-aaf2-659a4a14e213?action=share&source=collection_link&creator=37987653"
+		"_collection_link": "https://doorehami.postman.co/workspace/66e70c7e-0d5e-45fa-8f74-72c93165ba9c/collection/37987653-8a91a728-7ad5-484f-8a10-67f1cac8100d?action=share&source=collection_link&creator=37987653"
 	},
 	"item": [
 		{
@@ -109,6 +109,20 @@
 		},
 		{
 			"name": "create",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [],
